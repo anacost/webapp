@@ -4,7 +4,7 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 IMG_folder = os.path.join("static", "IMG")
-app.config["UPLOAD_FOLDER"] = IMG_FOLDER
+app.config["UPLOAD_FOLDER"] = IMG_folder
 
 @app.route('/')
 def index():
