@@ -8,6 +8,8 @@
 </head>
 <body>
      <h1>my website</h1>
-    
+     {% for i in imagelist %}
+    <img src = "{{ url_for('static', filename=i)}}">
+    {% endfor %}    
 </body>
 </html>
